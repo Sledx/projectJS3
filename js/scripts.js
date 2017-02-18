@@ -1,17 +1,12 @@
 // plik scripts.js
-
-var name = prompt('Wpisz swoje imię');
-
-//wg zadania 8.3 komuntuje linie alert dowolnym type komentarza, zakładam, że o to chodzi :)
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
-
-/* 
-nie czaje troche zadania, choc jest krotkie:
-1. W pliku scripts.js zakomentuj linię z poleceniem alert dowolnym typem komentarza.
-2. Wyślij zmiany na zdalne repozytorium.
-3. Dodaj jeszcze dwa inne komentarze.
-4. Stwórz nowe repozytorium i wyślij tam swój projekt. Pamiętaj o udostępnieniu go mentorowi na Githubie. Link do projektu wstaw poniżej.
+var h = prompt("Wpisz wysokosc: "),
+    a = prompt("wpisz dlugosc boku ")
+    triangleArea = a * h / 2;
+/* według wersji z punktu 2. zadania. Tzn wg mnie to i to powyzej jest rozwiazaniem, nie czaje troche sensu/logiki tych punktow z zadania. To chyba chodzi o to ze w punkcie 1. jest opisane, a pozniej w kolejnych po kolei co robic, jesli dobrze rozumiem.
+var h = 4,
+    a = 5,
+    triangleArea = a * h / 2;
 */
 
-//dodaje jeszcze drugi komentarz i wysyłam dopiero na repozytorium, ale to z poprzedniego zadania bo rozni sie o te komentarze wiec chyban nie ma sensu zebym od początku robił całą strukturę i nowe repozytorium?
+alert('Pole trojkata wynosi, ' + triangleArea);
+console.log("Pole trojkata o podstawie a: " + a + " i wysokosci h: " + h + " wynosi: " + triangleArea);

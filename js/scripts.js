@@ -1,12 +1,22 @@
 // plik scripts.js
-var h = prompt("Wpisz wysokosc: "),
-    a = prompt("wpisz dlugosc boku ")
-    triangleArea = a * h / 2;
-/* według wersji z punktu 2. zadania. Tzn wg mnie to i to powyzej jest rozwiazaniem, nie czaje troche sensu/logiki tych punktow z zadania. To chyba chodzi o to ze w punkcie 1. jest opisane, a pozniej w kolejnych po kolei co robic, jesli dobrze rozumiem.
-var h = 4,
-    a = 5,
-    triangleArea = a * h / 2;
-*/
 
-alert('Pole trojkata wynosi, ' + triangleArea);
-console.log("Pole trojkata o podstawie a: " + a + " i wysokosci h: " + h + " wynosi: " + triangleArea);
+var a = 5,
+    b = 4,
+    value = (a * b) + (2 * a * b) - (b * b);
+
+alert('Wynik formuly wynosi, ' + value);
+console.log("Wynik formuły (a*a) + (2 * a * b) - (b*b) jest rowny: " + value);
+
+// w zadaniu nie sugeruja nic na switcha, krotko
+if (value > 0) {
+    console.log("Wynik formuly jest dodatni");
+} else if (value < 0) {
+    console.log("Wynik formuly jest ujemny");
+} else {
+    console.log("Wynik to 0");
+}
+
+//juz niby mam z tym zerem powyzej, ale wyczuwam ze w zadaniu chca jeszcze skrotowo
+
+var isItNull = value = 0 ? "Wynik to 0" : "wynik jest inny od 0";
+console.log(isItNull);
